@@ -1,0 +1,28 @@
+version: '3'
+
+tasks:
+  default:
+    desc: List available tasks
+    silent: true
+    cmds:
+      - task --list
+
+  doctor:
+    desc: Print the versions of the required tools
+    cmds:
+      - git --version
+      - docker --version
+      - terraform version
+      - kind version
+      - kubectl version --client
+      - helm version --short
+
+  up:
+    desc: Create the platform (implemented in step 3)
+    cmds:
+      - echo "Not implemented yet, see docs/steps"
+
+  down:
+    desc: Destroy the platform (implemented in step 3)
+    cmds:
+      - echo "Not implemented yet, see docs/steps"

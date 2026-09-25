@@ -1,0 +1,15 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Secrets
+.env
+*.pem
+
+# Editor / OS
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
